@@ -5,7 +5,6 @@ http.createServer(onRequest).listen(8888);
 
 function onRequest(request, response) {
   const pathName = url.parse(request.url).pathname;
-  console.log('Path Name ' + pathName);
   displayPage(response, pathName);
 }
 
